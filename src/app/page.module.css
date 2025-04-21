@@ -166,3 +166,50 @@ a.secondary {
     filter: invert();
   }
 }
+.linkItem {
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+.linkItem:hover {
+  color: #3b82f6;
+  /*blue-500*/margin-left: 10px;
+  margin-right: 10px;
+
+}
+/* Add these to your existing styles */
+.navbar {
+  /* Base styles are in the component */
+}
+
+.sticky {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.navLink:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
+  background: #4CAF50;
+  border-radius: 3px;
+}
+
+.logoText:hover {
+  opacity: 0.9;
+}
