@@ -173,7 +173,7 @@ export default function NavBar() {
         <div
           style={{
             background: "#333",
-            position: "absolute",
+            position: "sticky",
             top: isSticky ? "70px" : "70px",
             left: 0,
             right: 0,
